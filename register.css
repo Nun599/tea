@@ -1,0 +1,95 @@
+    body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #603808, #8B5E34, #FFEDD8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    }
+
+    body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('img/img.jpg') center center / cover no-repeat;
+    filter: blur(10px);
+    z-index: -1;
+    opacity: 0.6; 
+    }
+
+    .card {
+    background: #8B5E34;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px #FFEDD8;
+    width: 400px;
+    text-align: center;
+    transform: scale(1.1); 
+    }
+
+    .tabs {
+    display: flex;
+    margin-bottom: 15px;
+    }
+
+    .tabs button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
+    }
+
+    .tabs button.active {
+    border-bottom: 2px solid #FFEDD8;
+    color: #FFEDD8;
+    }
+
+    input, select {
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    font-size: 14px;
+    background: #ffffff1a;
+    color: #fff;
+    }
+
+    input::placeholder, select:invalid {
+    color: #FFEDD8;
+    }
+
+    button.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background:#603808;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #FFEDD8;
+    font-weight: bold;
+    transition: 0.2s;
+    }
+
+    button.submit-btn:hover {
+    background: #8B5E34;
+    }
+
+    #message {
+    margin-bottom: 10px;
+    font-weight: bold;
+    }
